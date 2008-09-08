@@ -1,0 +1,271 @@
+# Catalog file for RBBR.
+# Copyright (C) 2003,2004 Ruby-GNOME2 Project Team
+# Masao Mutoh, 2003
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.6.0\n"
+"POT-Creation-Date: 2004-03-25 23:27+0900\n"
+"PO-Revision-Date: 2003-11-27 02:30+0900\n"
+"Last-Translator: Masao Mutoh\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: lib/rbbr/ui/gtk/aboutdialog.rb:49
+msgid "About this application"
+msgstr "このアプリケーションについて"
+
+#: lib/rbbr/ui/gtk/aboutdialog.rb:74 lib/rbbr/ui/gtk/browselist.rb:152
+#: lib/rbbr/ui/gtk/browselist.rb:171 lib/rbbr/ui/gtk/constlist.rb:25
+#: lib/rbbr/ui/gtk/methodlist.rb:27
+msgid "Name"
+msgstr "名前"
+
+#: lib/rbbr/ui/gtk/aboutdialog.rb:76 lib/rbbr/ui/gtk/constlist.rb:25
+msgid "Value"
+msgstr "値"
+
+#: lib/rbbr/ui/gtk/browselist.rb:152
+msgid "Return type"
+msgstr "戻り値の型"
+
+#: lib/rbbr/ui/gtk/browselist.rb:152
+msgid "Parameters"
+msgstr "パラメータ"
+
+#: lib/rbbr/ui/gtk/browselist.rb:171 lib/rbbr/ui/gtk/libselectiondialog.rb:79
+msgid "Type"
+msgstr "型"
+
+#: lib/rbbr/ui/gtk/browselist.rb:171
+msgid "GType"
+msgstr "GType"
+
+#: lib/rbbr/ui/gtk/browselist.rb:171
+msgid "Flags"
+msgstr "フラグ"
+
+#: lib/rbbr/ui/gtk/browselist.rb:171
+msgid "Default"
+msgstr "デフォルト"
+
+#: lib/rbbr/ui/gtk/browser.rb:32
+msgid "Select a Ruby script"
+msgstr "Rubyスクリプト選択"
+
+#: lib/rbbr/ui/gtk/browser.rb:44
+msgid "A folder was selected when a file was expected."
+msgstr "rubyスクリプトファイルを指定してください"
+
+#: lib/rbbr/ui/gtk/browser.rb:47
+msgid "Could not load the script '%s'"
+msgstr "'%s'をロードできませんでした"
+
+#: lib/rbbr/ui/gtk/browser.rb:73
+msgid "/_File"
+msgstr "/ファイル(_F)"
+
+#: lib/rbbr/ui/gtk/browser.rb:74
+msgid "/_File/_Require Library..."
+msgstr "/ファイル(_F)/ライブラリを読み込む(_R)..."
+
+#: lib/rbbr/ui/gtk/browser.rb:75
+msgid "/_File/_Load Script..."
+msgstr "/ファイル(_F)/スクリプトのロード(_L)..."
+
+#: lib/rbbr/ui/gtk/browser.rb:76
+msgid "/_File/_Separator"
+msgstr "/ファイル(_F)/_Separator"
+
+#: lib/rbbr/ui/gtk/browser.rb:77
+msgid "/_File/_Quit"
+msgstr "/ファイル(_F)/終了(_Q)"
+
+#: lib/rbbr/ui/gtk/browser.rb:78
+msgid "/_View"
+msgstr "/表示(_V)"
+
+#: lib/rbbr/ui/gtk/browser.rb:79 lib/rbbr/ui/gtk/browser.rb:97
+msgid "/_View/_Expand All"
+msgstr "/表示(_V)/ツリーを全て開く(_E)"
+
+#: lib/rbbr/ui/gtk/browser.rb:80 lib/rbbr/ui/gtk/browser.rb:98
+msgid "/_View/_Collapse All"
+msgstr "/表示(_V)/ツリーを全て閉じる(_C)"
+
+#: lib/rbbr/ui/gtk/browser.rb:81
+msgid "/_View/_Separator1"
+msgstr "/表示(_V)/_Separator1"
+
+#: lib/rbbr/ui/gtk/browser.rb:82 lib/rbbr/ui/gtk/browser.rb:92
+msgid "/_View/Go _Back"
+msgstr "/表示(_V)/戻る(_B)"
+
+#: lib/rbbr/ui/gtk/browser.rb:83 lib/rbbr/ui/gtk/browser.rb:93
+msgid "/_View/Go _Forward"
+msgstr "/表示(_V)/次へ(_F)"
+
+#: lib/rbbr/ui/gtk/browser.rb:84
+msgid "/_View/_Separator2"
+msgstr "/表示(_V)/_Separator2"
+
+#: lib/rbbr/ui/gtk/browser.rb:85
+msgid "/_View/_Refresh"
+msgstr "/表示(_V)/再読込"
+
+#: lib/rbbr/ui/gtk/browser.rb:86
+msgid "/_View/_Separator"
+msgstr "/表示(_V)/_Separator3"
+
+#: lib/rbbr/ui/gtk/browser.rb:87
+msgid "/_View/_Stock Item and Icon Browser..."
+msgstr "/表示(_V)/ストックアイテム・アイコンブラウザ..."
+
+#: lib/rbbr/ui/gtk/browser.rb:88
+msgid "/_Help"
+msgstr "/ヘルプ(_H)"
+
+#: lib/rbbr/ui/gtk/browser.rb:89
+msgid "/_Help/_About"
+msgstr "/ヘルプ(_H)/このアプリケーションについて"
+
+#: lib/rbbr/ui/gtk/browser.rb:106
+msgid "Go back"
+msgstr "一つ前へ戻る"
+
+#: lib/rbbr/ui/gtk/browser.rb:109
+msgid "Go forward"
+msgstr "一つ先へ進む"
+
+#: lib/rbbr/ui/gtk/browser.rb:122
+msgid "Enter search class/module and method/constant"
+msgstr "検索するクラス/モジュールとメソッド/定数を入れてください"
+
+#: lib/rbbr/ui/gtk/browser.rb:148
+msgid "Ruby Browser"
+msgstr "Ruby Browser"
+
+#: lib/rbbr/ui/gtk/browser.rb:185
+msgid "_List"
+msgstr "一覧(_L)"
+
+#: lib/rbbr/ui/gtk/browser.rb:185
+msgid "_Tree"
+msgstr "ツリー(_T)"
+
+#: lib/rbbr/ui/gtk/docviewer.rb:139
+msgid "(no document)\n"
+msgstr "(ドキュメントなし)\n"
+
+#: lib/rbbr/ui/gtk/libselectiondialog.rb:26
+msgid "Select libraries"
+msgstr "ライブラリ選択"
+
+#: lib/rbbr/ui/gtk/libselectiondialog.rb:35
+msgid ""
+"Check target libraries:"
+msgstr "対象ライブラリを選択してください："
+
+#: lib/rbbr/ui/gtk/libselectiondialog.rb:56
+msgid "Libraries Tree"
+msgstr "ライブラリツリー"
+
+#: lib/rbbr/ui/gtk/libselectiondialog.rb:83
+msgid "Libraries"
+msgstr "ライブラリ"
+
+#: lib/rbbr/ui/gtk/methodlist.rb:54
+msgid "Class Methods / Module Functions"
+msgstr "クラスメソッド / モジュール関数"
+
+#: lib/rbbr/ui/gtk/methodlist.rb:67
+msgid "Public Instance Methods"
+msgstr "Publicインスタンスメソッド"
+
+#: lib/rbbr/ui/gtk/methodlist.rb:71
+msgid "Protected Instance Methods"
+msgstr "Protectedインスタンスメソッド"
+
+#: lib/rbbr/ui/gtk/methodlist.rb:75
+msgid "Private Instance Methods"
+msgstr "Privateインスタンスメソッド"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:59
+msgid "Methods"
+msgstr "メソッド"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:60 lib/rbbr/ui/gtk/stockbrowser.rb:72
+msgid "Constants"
+msgstr "定数"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:61
+msgid "Signals"
+msgstr "シグナル"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:62
+msgid "Properties"
+msgstr "プロパティ"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:63
+msgid "Child Properties"
+msgstr "子プロパティ"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:66
+msgid "Styles"
+msgstr "スタイル"
+
+#: lib/rbbr/ui/gtk/modulelabel.rb:36
+msgid "Select a class/module"
+msgstr "クラス/モジュールを選択してください"
+
+#: lib/rbbr/ui/gtk/modulelistview.rb:26 lib/rbbr/ui/gtk/moduletreeview.rb:26
+msgid "Classes / Modules"
+msgstr "クラス/モジュール"
+
+#: lib/rbbr/ui/gtk/moduletreeview.rb:66
+msgid "<root>"
+msgstr "<ルート>"
+
+#: lib/rbbr/ui/gtk/moduletreeview.rb:71
+msgid "<modules>"
+msgstr "<モジュール>"
+
+#: lib/rbbr/ui/gtk/moduleview.rb:97
+msgid "The text you entered was not found. Wrap arround?"
+msgstr "文字列が見つかりませんでした。最初から繰り返しますか？"
+
+#: lib/rbbr/ui/gtk/searchentrybox.rb:65
+msgid "_Search Term:"
+msgstr "検索文字列：(_S)"
+
+#: lib/rbbr/ui/gtk/searchentrybox.rb:70
+msgid "Search"
+msgstr "検索"
+
+#: lib/rbbr/ui/gtk/searchentrybox.rb:93
+msgid "Could not compile %s"
+msgstr "文字列が不正です：%s"
+
+#: lib/rbbr/ui/gtk/stockbrowser.rb:33
+msgid "Selected Item - Gtk::IconSize"
+msgstr "選択アイテム - Gtk::IconSize"
+
+#: lib/rbbr/ui/gtk/stockbrowser.rb:86
+msgid "Label"
+msgstr "ラベル"
+
+#: lib/rbbr/ui/gtk/stockbrowser.rb:86
+msgid "Accel"
+msgstr "アクセラレータ"
+
+#: lib/rbbr/ui/gtk/stockbrowser.rb:86
+msgid "ID"
+msgstr "ID"
+
+#: lib/rbbr/ui/gtk/stockbrowser.rb:150
+msgid "Stock Item and Icon Browser"
+msgstr "ストックアイテム・アイコンブラウザ"
+

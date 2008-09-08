@@ -1,0 +1,570 @@
+2004-03-28  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/methodlist.rb: Improved how to show arities.
+	* lib/rbbr/ui/gtk/undo.rb: Fix to access class variables.
+	This is the change specification of ruby-1.9.0. 
+	Reported by Joao Pedrosa.
+	* lib/rbbr/doc/rd.rb: Fix not to match to [],[]=.
+	* lib/rbbr/doc/ri2.rb: Added.
+	* po/ko/rbbr.po: Added. Translated by Park Ji-In.
+	* AUTHORS: Add translators.
+
+2004-03-27  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* README, README.ja: Added Racc information. 
+	* bin/rbbr: Convert it from dos-format to unix-format.
+	Pointed out by Jan Weil.
+	* lib/rbbr/ui/gtk/libselectiondialog.rb, po/*/rbbr.po: 
+	Fixed a message. Pointed out by Jan Weil.
+	* po/pt_BR/rbbr.po: Added. Translated by Joao Pedorosa.
+	* AUTHORS: Add translators.
+
+2004-03-26  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* AUTHORS: Add translators.
+	* po/de/rbbr.po: Added. Translated by Jan Weil.
+	* po/cy/rbbr.po: Added. Translated by Dafydd Harries.
+	* po/es/rbbr.po: Added. Translated by David Espada.
+	* po/it/rbbr.po: Added. Translated by Gabriele Renzi.
+	* po/fr/rbbr.po: Updated by Laurent Sansonetti.
+	* README, README.ja: Revised.
+	* lib/rbbr.rb: Update version information.
+	* lib/rbbr/ui/gtk/searchentrybox.rb: Revise some strings.
+	* po/*: Updated.
+	* data/rbbr/icon.png: Updated.
+	* lib/rbbr/ui/gtk/docview.rb, aboutdialog.rb: Reduce font
+	warning under Win32.
+	* pre-setup.rb: Work compiling catalog files under Win32.
+
+2004-02-29  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/stockbrowser.rb: Remove GC.start.
+
+2004-02-27  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/docviewer.rb: Fix a change of Ruby/GTK(Gdk::Window#pointer).
+
+2004-02-24  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* COPYING, COPYING.ja: Added.
+
+2004-01-29  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/browselist.rb: Show blurb correctly under client's locale.
+	* lib/rbbr/ui/gtk/moduledisplay.rb, browselist.rb: Add Child Properties tab.
+
+2004-01-25  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/moduledisplay.rb, browelist.rb: 
+	Support Styles for Gtk::Widgets. 
+
+2004-01-16  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/browser.rb, moduledisplay.rb: 
+	Add some keyboard accelerations.
+
+2004-01-15  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/stockbrowser.rb, browser.rb: StockBrowser becomes 
+	an modeless window.
+	* lib/rbbr/ui/gtk/browser.rb: Add accelerator keys to List/Tree tabs.
+	* lib/rbbr/ui/gtk/modulelabel.rb: Show texts larger.
+
+2004-01-12  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/moduleview.rb: Improved scroll to search. 
+	* lib/rbbr/ui/gtk/modulelabel.rb: Added hypertext function.
+	* lib/rbbr/ui/gtk/moduledisplay.rb: Made link to Foo#bar work.
+
+2004-01-11  Kenichi Komiya <kom@mail1.accsnet.ne.jp>
+
+	* lib/rbbr/ui/gtk/moduledisplay.rb: Made link to class work.
+	* lib/rbbr/ui/gtk/docviewer.rb: Fixed a bug which select all
+	text when user follow a link.
+	* lib/rbbr/ui/gtk/undo.rb: clear redo queue when new memnto
+	is added.
+	
+2004-01-11  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/linkedtextbuffer.rb: Added hypertext function to docviewer.
+	Original patch is produced by Kenichi Komiya.
+	* lib/rbbr/ui/gtk/docviewer.rb: ditto.
+	* lib/rbbr/ui/gtk/*.rb: Support undo/redo(Experimental).
+	* lib/rbbr/ui/gtk/undo.rb: Added.
+	* lib/rbbr/ui/gtk/searchentrybox.rb, browser.rb: Ctrl+T to move to the entrybox.
+
+2004-01-04  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/modulelistview.rb, moduletreeview.rb, moduledisplay.rb
+	methodlist.rb: Enable to search methods.
+	* lib/rbbr/ui/gtk/searchentrybox.rb: Added(separate from browser.rb).
+	* lib/rbbr/ui/gtk/moduleview.rb: Added as abstract class of 
+	modulelistview.rb, moduletreeview.rb.
+
+2004-01-03  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/stockbrowser.rb: Remove GC.start (Ruby/GTK2 was fixed in CVS).
+
+2003-12-20  Laurent Sansonetti  <lrz@gnome.org>
+
+	* lib/rbbr/ui/gtk.rb: Moved code to set the title of the
+	main window in gtk/browser.rb.
+	* lib/rbbr/ui/gtk/aboutdialog.rb: Removed the separator
+	and fixed border width. 
+	* lib/rbbr/ui/gtk/browser.rb: 
+	- Only load scripts upon accept responses in the 'Open script' file
+	  dialog ;
+	- Display an error when a directory was selected instead
+	  of a file in the 'Open script' file dialog ;
+	- Added descriptive title for the error message boxes, when
+	  failing to open script or compile regex ;
+	- 'File/Require Library' accessible with CONTROL+L ;
+	- 'File/Load Script' accessible with CONTROL+O ;
+	- Replaced 'View/Update Information' with 'View/Refresh' ;
+	- Removed an extra space in 'View/Stock Item and Icon Browser...' ;
+	- Removed help icon for 'Help/About' ;
+	- Translate the title of the main window ;
+	- Disable 'View/[Expand|Collapse] all' when in list mode instead
+	  of tree mode.
+	* lib/rbbr/ui/gtk/libselectiondialog.rb:
+	- Fixed the response of the Cancel button to allow closing of the
+	  window by pressing Escape ;
+	- Added descriptive text before the tree view ;
+	- Removed the separator and fixed border width.
+	* lib/rbbr/ui/gtk/moduledisplay.rb: Removed extra packing of tab
+	labels (default packing is now used).
+	* lib/rbbr/ui/gtk/stockbrowser.rb:
+	- Automatically select the first item ;
+	- Removed the separator and fixed border width.
+	* lib/rbbr/ui/gtk/windowutils.rb: Fixed the error/warning dialog
+	boxes to respect HIG alerts.
+
+2003-12-27  Laurent Sansonetti  <lrz@gnome.org>
+
+	* lib/rbbr/ui/gtk/docviewer.rb: Make the documentation viewer
+	read-only while the 'hiki upload' feature isn't implemented.
+
+2003-12-26  Laurent Sansonetti  <lrz@gnome.org>
+
+	* lib/rbbr/ui/gtk.rb: Moved code to set the title of the
+	main window in gtk/browser.rb.
+	* lib/rbbr/ui/gtk/aboutdialog.rb: Removed the separator
+	and fixed border width. 
+	* lib/rbbr/ui/gtk/browser.rb: 
+	- Only load scripts upon accept responses in the 'Open script' file
+	  dialog ;
+	- Display an error when a directory was selected instead
+	  of a file in the 'Open script' file dialog ;
+	- Added descriptive title for the error message boxes, when
+	  failing to open script or compile regex ;
+	- 'File/Require Library' accessible with CONTROL+L ;
+	- 'File/Load Script' accessible with CONTROL+O ;
+	- Replaced 'View/Update Information' with 'View/Refresh' ;
+	- Removed an extra space in 'View/Stock Item and Icon Browser...' ;
+	- Removed help icon for 'Help/About' ;
+	- Translate the title of the main window ;
+	- Disable 'View/[Expand|Collapse] all' when in list mode instead
+	  of tree mode.
+	* lib/rbbr/ui/gtk/libselectiondialog.rb:
+	- Fixed the response of the Cancel button to allow closing of the
+	  window by pressing Escape ;
+	- Added descriptive text before the tree view ;
+	- Removed the separator and fixed border width.
+	* lib/rbbr/ui/gtk/moduledisplay.rb: Removed extra packing of tab
+	labels (default packing is now used).
+	* lib/rbbr/ui/gtk/stockbrowser.rb:
+	- Automatically select the first item ;
+	- Removed the separator and fixed border width.
+	* lib/rbbr/ui/gtk/windowutils.rb: Fixed the error/warning dialog
+	boxes to respect HIG alerts.
+
+2003-12-26  Vincent Isambart <isambart@netcourrier.com>
+
+	* README: Fixed typo.
+
+2003-12-21  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/confmanager.rb: Fix a bug on MS Windows.
+
+2003-12-20  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/methodlist.rb: Fix a bug when Module 
+	has #initialize method.
+	(Bugs [ 859431 ])
+
+2003-12-17  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/windowutils.rb: Add warning dialog.
+	* lib/rbbr/ui/gtk/browser.rb: Show an warning dialog 
+	when the entry text is not correct regexp value.
+	Suggested by Nobu Nakada.
+	* install.rb: Install rbbr.rbw to /foo/bin/ under Win32, 
+	and don't install it under other platforms.
+
+2003-12-16  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* bin/rbbr.rbw: Added for Win32.
+	* lib/rbbr/ui/gtk/confmanager.rb: Improve to support Win32. 
+	Reported by gabriele renzi.
+	* lib/rbbr.rb: Increment micro version.
+	* lib/rbbr/ui/gtk/stockbrowser.rb: Work unless Ruby-GetText-Package. 
+	Reported by Rich.
+	* po/be/rbbr.po: Added. By Ales Nyakhaychyk.
+	* README, AUTHORS: Updated.
+
+2003-12-06  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/rbbr.rb: Remove RBBR.conv_utf8.
+	* lib/rbbr/ui/gtk/browselist.rb: ditto.
+
+2003-11-30  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* po/fr/rbbr.po: Added. By Laurent Sansonetti.
+
+2003-11-29  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/*.rb: Support L10n with Ruby-GetText-Package.
+	* po/rbbr.pot, po/ja/rbbr.po: Added for L10n.
+	* pre-setup.rb: Added for L10n.
+	* lib/rbbr/ui/gtk/methodlist.rb: Remove "Private instance methods".
+
+2003-11-27  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/methodlist.rb: Fix bad arguments for "new" method.
+	* lib/rbbr/ui/gtk/browser.rb: 
+
+2003-11-26  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/constlist.rb: Improved.
+	* lib/rbbr/doc/refe.rb: Support ReFe-0.8.0.
+	* lib/rbbr.rb: Increment version number.
+	* lib/rbbr/ui/gtk/aboutdialog.rb: Enhanced version information.
+	
+
+2003-11-25  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/brower.rb: Serialize several informations for GUI. 
+
+2003-11-21  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/modulelistview.rb, moduletreeview.rb: Added. Support
+	module list view.
+	* lib/rbbr/ui/gtk/moduleindex.rb: Removed.
+	* lib/rbbr/ui/gtk/browser.rb, libselectiondialog.rb: Ditto.
+
+2003-09-29  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/constlist.rb: Fix a bug when the constants of 
+	subclasses of GLib::Enum or GLib::Flags weren't shown.
+
+2003-09-22  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/browselist.rb: Withdraw previous changes. 
+	Because Ruby/GLib fixed this problem. Pointed out by Masahiro Sakai.
+
+2003-09-19  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/browselist.rb: Fix for a bug when load scripts which uses 
+	Ruby/GLib. Reported by Aredridel.
+
+2003-09-09  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* data/rbbr/icon.png: Changed.
+	* lib/rbbr/ui/gtk/constlist.rb: Added. Move ConstantList class from broselist.rb.
+	* lib/rbbr/metainfo.rb: Remove Module.true_constants.
+	* MANIFEST: Removed.
+
+2003-09-07  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/metainfo.rb: Remove "require 'find'".
+	* lib/rbbr/ui/gtk/libselectiondialog.rb: Improved.
+	* lib/rbbr/ui/gtk/confmanager.rb: Added for saving status.
+	Now this use Ruby/GConf but I'll fix it to use other way not to use Ruby/GConf
+	for the environments which aren't supported Ruby/GConf.
+	* lib/rbbr/ui/gtk/browselist.rb: Support GLib::Enum/GLib::Types
+
+2003-09-03  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr.rb: Remove to require rbconfig.
+	Change version info.
+
+2003-09-02  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/browselist.rb: Apply GLib::Enum/GLib::Flags.
+	* data/rbbr/icon.(xpm, png): Change icon.xpm to icon.png.
+	* lib/rbbr/ui/gtk/browser.rb, aboutdialog.rb: ditto.
+	* lib/rbbr/ui/gtk/libselectiondialog.rb: Selected libararies are now serialized.
+
+2003-08-19  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/metainfo.rb: Remove Library.
+	* lib/rbbr/doc.rb: Fix a bug for $DEBUG mode.
+
+2003-08-17  KATO Kazuyoshi  <kzys@users.sf.net>
+
+	* lib/rbbr/ui/gtk/browselist.rb: Fix mismatch arguments with DocViewer.
+
+2003-08-10  Hiroshi IGARASHI  <iga@ruby-lang.org>
+
+	* lib/rbbr/doc/ri.rb: catch :exit thrown from ri not to stop
+	rbbr when given unknown names.
+
+2003-08-10  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/docviewer.rb, moduleindex.rb: Improve showing data.
+	* lib/rbbr/ui/gtk/methodlist.rb: Fix a bug for ruby-1.6.x. Reported by knu.
+	* lib/rbbr/ui/gtk/aboutdialog.rb: Add ruby's version info.
+
+2003-08-08  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/doc/rd.rb, refe.rb, lib/rbbr/ui/gtk/docviewer.rb: Improve to show data.
+	* lib/rbbr/ui/gtk/aboutdialog.rb, lib/rbbr/doc/*.rb: Show ReFe/ri version.
+
+2003-08-03  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* README, README.ja, AURTHORS: Revised. 
+	* lib/rbbr/data/rd: Added.
+	* lib/rbbr/data/rd/README: Added.
+	* bin/rbbr.rb: Use RBBR::UI::GTK.main directly.
+	* lib/rbbr/ui.rb, plugin.rb: Removed.
+	* lib/rbbr/ui/gtk/browser.rb: Replace ModuleNestingTree to Search Entry
+	* lib/rbbr/ui/gtk/modulenestingtree.rb: Removed.
+	* lib/rbbr/ui/gtk/methodlist.rb: Added.
+
+2003-08-02  Masao Mutoh  <mutoh@highway.ne.jp>
+	* lib/rbbr/doc/rd.rb: Added for Ruby-GNOME2 API documents.
+	* lib/rbbr/doc/gtkdoc.rb, rubyapi.rb, data/rbbr/rubyapi.db: Removed.
+	* lib/rbbr/doc/ri.rb: Improve displaying.
+	* lib/rbbr/doc/refe.rb: Support refe-0.7.1.
+	* lib/rbbr/ui/gtk/moduledisplay.rb: Code cleanup
+	* lib/rbbr/ui/gtk.rb, lib/rbbr.rb: Move conv_utd8 to RBBR.
+
+2003-08-01  Masahiro Sakai  <sakai@tom.sfc.keio.ac.jp>
+
+	* lib/rbbr/ui/gtk/browselist.rb: follow Ruby/GLib's change.
+
+	* lib/rbbr/ui/gtk/moduleindex.rb: show not only named module but also
+	anonymous module.
+
+2003-07-15  Masahiro Sakai  <sakai@tom.sfc.keio.ac.jp>
+
+	* lib/rbbr/ui/gtk/browselist.rb: remove "Nick" column from
+	PropertyList.
+
+	* lib/rbbr/ui/gtk/moduledisplay.rb, lib/rbbr/ui/gtk/browselist.rb: 
+	display GLib::Param#blurb in document viewer. (ad-hoc)
+
+	* lib/rbbr/ui/gtk/browselist.rb: pass explicit false to
+	public_instance_methods, protected_instance_methods,
+	private_instance_methods and singleton_methods to supress warnings
+	on ruby-1.8.
+
+2003-04-13  Masahiro Sakai  <sakai@tom.sfc.keio.ac.jp>
+
+	* lib/rbbr/ui/gtk/browselist.rb: Improve PropertyList to display
+	default value.
+
+2002-12-30  Masao Mutoh  <mutoh@highway.ne.jp>
+
+   * lib/rbbr.rb: Update version.
+
+2002-12-30  Hiroshi IGARASHI  <iga@ruby-lang.org>
+
+	* lib/rbbr/pre-setup.rb: generate the definition of
+	RBBR::Config::ICONV_SRC_CHARSET in lib/rbbr/config.rb
+	* lib/rbbr/config.rb: removed because the file is auto-generated
+	in configuration.
+
+2002-12-28  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/stockbrowser.rb: Improve Stock Item and Icon browser.
+
+2002-12-27  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/stockbrowser.rb: Add Gnome::Stock.
+	* lib/rbbr/ui/gtk.rb, lib/rbbr/ui/gtk/aboutdialog.rb: Add RBBR::VERSION.
+
+2002-12-25  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/libselectiondialog.rb: Separate from windowutils.rb and code clean up.
+	* lib/rbbr/ui/gtk/browser.rb, windowutils.rb: Code clean up.
+	* lib/rbbr/ui/gtk/browselist.rb, libselectiondialog.rb, aboutdialog.rb, stockbrowser.rb: 
+	Set rules_hint = true for Gtk::TreeView.
+	* lib/rbbr/config.rb: Add ICONV_SRC_CHARSET for native charsets like as EUC-JP.
+	* lib/rbbr/ui/gtk/browselist.rb: Improve UTF-8/native charset conversion.
+	* lib/rbbr/ui/gtk.rb: Add to require pango module.
+
+2002-12-19  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/browser.rb, aboutdialog.rb: Separate AboutDialog. Improve AboutDialog.
+	* lib/rbbr/ui/gtk/browser.rb, stockbrowser.rb: Support Stock Item and Icon browser.
+	* data/rbbr/icon.xpm: Change icon.xpm.
+	* data/rbbr/icon1.xpm, icon2.xpm: Remove icons.
+	* data/rbbr/REAMDE[.ja]: Modified.
+
+2002-12-08  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/browser.rb: Improve menus. Add version info in About dialog.
+	* lib/rbbr/ui/gtk.rb: gdkpixbuf2, gnome2, gnomecanvas2, libart2, libglade2, 
+	gconf2 are required as default libraries(but they are optional).
+
+2002-11-24  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* README, README.ja: setup.rb -> install.rb.
+	Pointed out by Noritsugu Nakamura <nnakamur@mxq.mesh.ne.jp>.
+
+2002-11-22  Masahiro Sakai  <sakai@tom.sfc.keio.ac.jp>
+
+	* lib/rbbr/ui/gtk/browselist.rb: Follow Ruby/GLib changes.
+
+2002-11-14  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/windowutils.rb: Bugfix for requiring library dialog.
+
+2002-11-13  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/browser.rb: Bugfix when "Update Information" menu is clicked.
+
+2002-11-08  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk.rb: Follow Ruby/GTK changes.
+
+2002-11-06  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk.rb: Add Gtk.init.
+
+2002-11-03  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/browselist.rb, moduleindex.rb, modulenestingtree.rb: 
+	Follow Gtk::TreeIter, Gtk::TreeModel changes.
+
+2002-11-02  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/modulenestingtree.rb, moduleindex.rb, browselist.rb:
+	Follow Gtk::TreeIter, Gtk::TreeModel changes.
+
+2002-11-01  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/modulelabel.rb: Follow Gtk::Entry changes.
+
+2002-10-30  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/browser.rb, windowutils.rb: Follow Gtk::Widget, Gtk::Window changes.
+	* lib/rbbr/ui/gtk/browser.rb: Use Gtk::ItemFactory.
+	* lib/rbbr/metainfo.rb: Fix Module.constant_at.
+
+2002-10-25  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/modulelabel.rb, moduledisplay.rb, docviewer.rb: 
+	Follow Gtk::TextView changes.
+
+2002-10-23  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/windowutils.rb: Follow Gtk::FileSelectionDialog changes.
+
+2002-10-22  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/browser.rb: Follow Gtk::MenuItem changes.
+
+2002-10-21  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/browselist.rb: Bugfix for displaying properties's Flags.
+
+2002-10-19  Masao Mutoh <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/windowutils.rb: Follow Gtk::Label changes. Change CList to Gtk::TreeView. 
+	the lists become sortable.
+	* lib/rbbr/ui/gtk/browselist.rb: Change CList to Gtk::TreeView. The lists become sortable.
+	* lib/rbbr/ui/gtk/*.rb: Fix tabs.
+
+2002-10-16  Hiroshi IGARASHI  <iga@ruby-lang.org>
+
+	* lib/rbbr/metainfo.rb (RBBR::MetaInfo::ModuleNesting):
+	build a whole module nesting tree at once.
+	* lib/rbbr/ui/gtk/browser.rb (RBBR::UI::GTK::Browser#initialize): 
+	use Gtk::ScrolledWindow#add instead of #add_with_viewport.
+
+2002-10-14  Masahiro Sakai  <sakai@tom.sfc.keio.ac.jp>
+
+	* lib/rbbr/ui/gtk/browselist.rb: follow changes of Ruby/GLib.
+
+2002-10-14  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* lib/rbbr/ui/gtk/browselist.rb: BugFix of PropertyList.
+	Add Ruby Type in PropertyList.
+	* README: Add credit of ruby icons.
+
+2002-10-14  Masao Mutoh  <mutoh@highway.ne.jp>
+
+	* Ruby/GTK2.	
+	* Obsoleted Widgets were removed(Gtk::Tree, Gtk::CTree).
+	* Separate lib/rbbr/ui/*.rb.
+	* Add PropertyList, SignalList. by Masahiro Sakai <sakai@tom.sfc.keio.ac.jp>
+	* Remove unused codes.
+	* Remove debian/.
+
+2002-06-02  Hiroshi IGARASHI  <iga@ruby-lang.org>
+
+	* lib/rbbr/doc/ri.rb (RBBR::Doc::RI#lookup_method): quote argument.
+
+2002-03-25  Hiroshi IGARASHI  <iga@ruby-lang.org>
+
+	* lib/rbbr/ui/gtk.rb: separate GUI component class and clean-up code.
+
+2002-03-24  Hiroshi IGARASHI  <iga@ruby-lang.org>
+
+	* debian/*: add directory to debianize.
+
+2002-03-24  Hiroshi IGARASHI  <iga@ruby-lang.org>
+
+	* lib/rbbr/metainfo.rb: define RBBR::MetaInfo::Library to enumerate
+	libraries.
+
+	* lib/rbbr/ui/gtk.rb: improve parts of GUI.
+
+2001-11-04  Hiroshi IGARASHI  <iga@ruby-lang.org>
+
+	* lib/rbbr/ui.rb: add a new interface file.
+
+2001-10-06  Hiroshi IGARASHI  <iga@ruby-lang.org>
+
+	* lib/rbbr/metainfo.rb (Module#constants_at): make more simple.
+	
+2001-10-06  Hiroshi IGARASHI  <iga@ruby-lang.org>
+
+	* lib/rbbr/pre-setup.rb: setup script for installation.
+
+2001-10-05  Hiroshi IGARASHI  <iga@ruby-lang.org>
+
+2001-10-06  Hiroshi IGARASHI  <iga@ruby-lang.org>
+ 
+	* lib/rbbr/metainfo.rb (RBBR::MetaInfo::ModuleNesting): 
+	calculate module nesting outside Module/Class classes.
+
+	* lib/rbbr/ui/gtk.rb (RBBR::UI::GTK::ModuleNestingTree): 
+	use new meta-info API.
+
+2001-10-04  Hiroshi IGARASHI  <iga@ruby-lang.org>
+
+	* lib/rbbr/ui/gtk.rb (RBBR::UI::GTK::BrowseList#notify_selection): 
+	GTK#BrowseList and its sub classes use template methods
+	#notify_selection to customize method spec.
+
+2001-09-30  Hiroshi IGARASHI  <iga@ruby-lang.org>
+
+	* lib/rbbr/doc/ri.rb: add file for doc viewer ri.
+
+2001-09-24  Hiroshi IGARASHI  <iga@ruby-lang.org>
+
+	* lib/rbbr/doc/gtkdoc.rb (RBBR::Doc::GtkDoc#lookup_method): 
+	implement a simple reference method from local document source files.
+
+2001-09-16  Hiroshi IGARASHI  <iga@ruby-lang.org>
+
+	* lib/rbbr/metainfo.rb, lib/rbbr/ui/gtk.rb:
+	add filter by module as namespace.
+
+2001-09-01  Hiroshi IGARASHI  <iga@ruby-lang.org>
+
+	* Project started. The most of code is from Ruby/GTK distribution.
+

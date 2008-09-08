@@ -1,0 +1,268 @@
+# Catalog file for RBBR.
+# Copyright (C) 2003 Ruby-GNOME2 Project Team
+# Jan Weil <jan.weil@web.de>, 2004
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.6.0\n"
+"POT-Creation-Date: 2004-03-25 23:27+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Jan Weil <Jan.Weil@web.de>\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-15\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: lib/rbbr/ui/gtk/aboutdialog.rb:49
+msgid "About this application"
+msgstr "Info zu RBBR"
+
+#: lib/rbbr/ui/gtk/aboutdialog.rb:74 lib/rbbr/ui/gtk/browselist.rb:152 lib/rbbr/ui/gtk/browselist.rb:171
+#: lib/rbbr/ui/gtk/constlist.rb:25 lib/rbbr/ui/gtk/methodlist.rb:27
+msgid "Name"
+msgstr "Name"
+
+#: lib/rbbr/ui/gtk/aboutdialog.rb:76 lib/rbbr/ui/gtk/constlist.rb:25
+msgid "Value"
+msgstr "Wert"
+
+#: lib/rbbr/ui/gtk/browselist.rb:152
+msgid "Return type"
+msgstr "Rückgabewert"
+
+#: lib/rbbr/ui/gtk/browselist.rb:152
+msgid "Parameters"
+msgstr "Parameter"
+
+#: lib/rbbr/ui/gtk/browselist.rb:171 lib/rbbr/ui/gtk/libselectiondialog.rb:79
+msgid "Type"
+msgstr "Typ"
+
+#: lib/rbbr/ui/gtk/browselist.rb:171
+msgid "GType"
+msgstr "GType"
+
+#: lib/rbbr/ui/gtk/browselist.rb:171
+msgid "Flags"
+msgstr "Flags"
+
+#: lib/rbbr/ui/gtk/browselist.rb:171
+msgid "Default"
+msgstr "Default"
+
+#: lib/rbbr/ui/gtk/browser.rb:32
+msgid "Select a Ruby script"
+msgstr "Ein Ruby-Skript auswählen"
+
+#: lib/rbbr/ui/gtk/browser.rb:44
+msgid "A folder was selected when a file was expected."
+msgstr "Es wurde ein Verzeichnis anstatt einer Datei ausgewählt."
+
+#: lib/rbbr/ui/gtk/browser.rb:47
+msgid "Could not load the script '%s'"
+msgstr "Das Skript '%s' konnte nicht geladen werden"
+
+#: lib/rbbr/ui/gtk/browser.rb:73
+msgid "/_File"
+msgstr "/_Datei"
+
+#: lib/rbbr/ui/gtk/browser.rb:74
+msgid "/_File/_Require Library..."
+msgstr "/_Datei/Eine _Bibliothek laden..."
+
+#: lib/rbbr/ui/gtk/browser.rb:75
+msgid "/_File/_Load Script..."
+msgstr "/_Datei/Ein Skript _laden..."
+
+#: lib/rbbr/ui/gtk/browser.rb:76
+msgid "/_File/_Separator"
+msgstr "/_Datei/_Separator"
+
+#: lib/rbbr/ui/gtk/browser.rb:77
+msgid "/_File/_Quit"
+msgstr "/_Datei/_Beenden"
+
+#: lib/rbbr/ui/gtk/browser.rb:78
+msgid "/_View"
+msgstr "/_Ansicht"
+
+#: lib/rbbr/ui/gtk/browser.rb:79 lib/rbbr/ui/gtk/browser.rb:97
+msgid "/_View/_Expand All"
+msgstr "/_Ansicht/Alles _entfalten"
+
+#: lib/rbbr/ui/gtk/browser.rb:80 lib/rbbr/ui/gtk/browser.rb:98
+msgid "/_View/_Collapse All"
+msgstr "/_Ansicht/Alles zusammen_falten"
+
+#: lib/rbbr/ui/gtk/browser.rb:81
+msgid "/_View/_Separator1"
+msgstr "/_Ansicht/Separator_1"
+
+#: lib/rbbr/ui/gtk/browser.rb:82 lib/rbbr/ui/gtk/browser.rb:92
+msgid "/_View/Go _Back"
+msgstr "/_Ansicht/_Zurück"
+
+#: lib/rbbr/ui/gtk/browser.rb:83 lib/rbbr/ui/gtk/browser.rb:93
+msgid "/_View/Go _Forward"
+msgstr "/_Ansicht/_Vorwärts"
+
+#: lib/rbbr/ui/gtk/browser.rb:84
+msgid "/_View/_Separator2"
+msgstr "/_Ansicht/Separator_2"
+
+#: lib/rbbr/ui/gtk/browser.rb:85
+msgid "/_View/_Refresh"
+msgstr "/_Ansicht/_Aktualisieren"
+
+#: lib/rbbr/ui/gtk/browser.rb:86
+msgid "/_View/_Separator"
+msgstr "/_Ansicht/_Separator"
+
+#: lib/rbbr/ui/gtk/browser.rb:87
+msgid "/_View/_Stock Item and Icon Browser..."
+msgstr "/_Ansicht/_Stock-Item- und Icon-Browser..."
+
+#: lib/rbbr/ui/gtk/browser.rb:88
+msgid "/_Help"
+msgstr "/_Hilfe"
+
+#: lib/rbbr/ui/gtk/browser.rb:89
+msgid "/_Help/_About"
+msgstr "/_Hilfe/_Info"
+
+#: lib/rbbr/ui/gtk/browser.rb:106
+msgid "Go back"
+msgstr "Zurück"
+
+#: lib/rbbr/ui/gtk/browser.rb:109
+msgid "Go forward"
+msgstr "Vorwärts"
+
+#: lib/rbbr/ui/gtk/browser.rb:122
+msgid "Enter search class/module and method/constant"
+msgstr "Suche nach Klasse/Modul und Methode/Konstante"
+
+#: lib/rbbr/ui/gtk/browser.rb:148
+msgid "Ruby Browser"
+msgstr "Ruby Browser"
+
+#: lib/rbbr/ui/gtk/browser.rb:185
+msgid "_List"
+msgstr "_Liste"
+
+#: lib/rbbr/ui/gtk/browser.rb:185
+msgid "_Tree"
+msgstr "_Baum"
+
+#: lib/rbbr/ui/gtk/docviewer.rb:139
+msgid "(no document)\n"
+msgstr "(kein Dokument)"
+
+#: lib/rbbr/ui/gtk/libselectiondialog.rb:26
+msgid "Select libraries"
+msgstr "Bibliotheken auswählen"
+
+#: lib/rbbr/ui/gtk/libselectiondialog.rb:35
+msgid "Check target libraries:"
+msgstr "Bitte markieren Sie die aufzulistenden Bibliotheken:"
+
+#: lib/rbbr/ui/gtk/libselectiondialog.rb:56
+msgid "Libraries Tree"
+msgstr "Name"
+
+#: lib/rbbr/ui/gtk/libselectiondialog.rb:83
+msgid "Libraries"
+msgstr "Bibliotheken"
+
+#: lib/rbbr/ui/gtk/methodlist.rb:54
+msgid "Class Methods / Module Functions"
+msgstr "Klassenmethoden / Modulfunktionen"
+
+#: lib/rbbr/ui/gtk/methodlist.rb:67
+msgid "Public Instance Methods"
+msgstr "Öffentliche Methoden der Instanz"
+
+#: lib/rbbr/ui/gtk/methodlist.rb:71
+msgid "Protected Instance Methods"
+msgstr "Geschützte Methoden der Instanz"
+
+#: lib/rbbr/ui/gtk/methodlist.rb:75
+msgid "Private Instance Methods"
+msgstr "Private Methoden der Instanz"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:59
+msgid "Methods"
+msgstr "Methoden"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:60 lib/rbbr/ui/gtk/stockbrowser.rb:72
+msgid "Constants"
+msgstr "Konstanten"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:61
+msgid "Signals"
+msgstr "Signale"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:62
+msgid "Properties"
+msgstr "Properties"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:63
+msgid "Child Properties"
+msgstr "Child Properties"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:66
+msgid "Styles"
+msgstr "Styles"
+
+#: lib/rbbr/ui/gtk/modulelabel.rb:36
+msgid "Select a class/module"
+msgstr "Eine Klasse/ein Modul auswählen"
+
+#: lib/rbbr/ui/gtk/modulelistview.rb:26 lib/rbbr/ui/gtk/moduletreeview.rb:26
+msgid "Classes / Modules"
+msgstr "Klassen / Module"
+
+#: lib/rbbr/ui/gtk/moduletreeview.rb:66
+msgid "<root>"
+msgstr "<root>"
+
+#: lib/rbbr/ui/gtk/moduletreeview.rb:71
+msgid "<modules>"
+msgstr "<modules>"
+
+#: lib/rbbr/ui/gtk/moduleview.rb:97
+msgid "The text you entered was not found. Wrap arround?"
+msgstr "Der gesuchte Text wurde nicht gefunden. Von vorne suchen?"
+
+#: lib/rbbr/ui/gtk/searchentrybox.rb:65
+msgid "_Search Term:"
+msgstr "_Suchbegriff:"
+
+#: lib/rbbr/ui/gtk/searchentrybox.rb:70
+msgid "Search"
+msgstr "Suchen"
+
+#: lib/rbbr/ui/gtk/searchentrybox.rb:93
+msgid "Could not compile %s"
+msgstr "Der reguläre Ausdruck '%s' konnte nicht kompiliert werden"
+
+#: lib/rbbr/ui/gtk/stockbrowser.rb:33
+msgid "Selected Item - Gtk::IconSize"
+msgstr "Ausgewähltes Element - Gtk::IconSize"
+
+#: lib/rbbr/ui/gtk/stockbrowser.rb:86
+msgid "Label"
+msgstr "Label"
+
+#: lib/rbbr/ui/gtk/stockbrowser.rb:86
+msgid "Accel"
+msgstr "Accel"
+
+#: lib/rbbr/ui/gtk/stockbrowser.rb:86
+msgid "ID"
+msgstr "ID"
+
+#: lib/rbbr/ui/gtk/stockbrowser.rb:150
+msgid "Stock Item and Icon Browser"
+msgstr "Stock-Item- und Icon-Browser"
+
+

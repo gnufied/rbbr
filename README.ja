@@ -1,0 +1,68 @@
+rbbr README
+===========
+
+  rbbr (RuBy BRowser)は、モジュール・クラス階層や、モジュール・
+  クラスの定数・メソッドを一覧するためのアプリケーションです。
+  ドキュメント参照のためのオプションモジュール(ReFe, ri)が
+  インストールされていれば、メソッドのドキュメントもブラウザ内
+  で参照できます。
+  また、Ruby-GNOME2 Project WebsiteにあるAPIリファレンスの
+  データを適宜インストールすることでAPIリファレンスのドキュメ
+　ントもブラウザ内で参照できます。
+
+
+必要環境
+--------
+  * ruby 1.8.0 または それ以降
+  * Ruby/GTK2 0.7.0 または それ以降
+  * (option) Ruby-GetText-Package 0.5.2 または それ以降
+             表示文字列を日本語化(ローカライズ)する場合に必要です。
+             http://ponx.s5.xrea.com/hiki/ja/ruby-gettext.html
+             ちなみにこれをインストールするためにはRacc-1.4.3以降も
+             必要です。
+             http://www.ruby-lang.org/raa/list.rhtml?name=racc
+  * (option) Ruby-GNOME2 API Documents in RD+.
+             http://ruby-gnome2.sourceforge.jp/data/ruby-gnome2-api.tar.gz
+  * (option) ReFe 0.7.1 または それ以降
+             http://www.loveruby.net/en/refe.html
+  * (option) ri 0.8a (ruby-1.8.0以降ではruby本体に含まれます)
+             http://raa.ruby-lang.org/list.rhtml?name=ri
+
+インストール方法
+----------------
+1. Racc, Ruby-GetText-Package, ri, ReFeをインストールしてください(Optional)
+2. ruby-gnome2-api.tar.gzとrbbr本体を展開します。
+3. ruby-gnome2-api/* の内容を(rbbrの展開ディレクトリ)/data/rbbr/rd/配下に
+  コピーします。
+4.コマンドラインで以下のように入力します。
+   UNIX 系 OS ではおそらく root 権限が必要になります。
+
+    $ ruby install.rb config
+    $ ruby install.rb setup
+   ($ su)
+    # ruby install.rb install
+
+  インストール先を変更したりすることもできます。
+  その場合は ruby install.rb --help を実行してみてください。
+
+
+簡単な使い方とか
+----------------
+
+  * Linux, *BSD, Cygwin
+    shellから以下のように起動します。
+    $ rbbr
+                                                                                
+  * MS Windows(Cygwin以外)
+    エクスプローラからruby-install-dir\bin\rbbr.rbwを(ダブル)クリックします。
+
+ライセンス
+----------
+  このプログラムはフリーソフトウェアです。
+  Rubyのライセンスと同じ条件で配布・修正することができます。
+
+作者
+----
+  (Ruby-GNOME2から) Ruby-GNOME2 Project <http://ruby-gnome2.sourceforge.net/>
+  (オリジナル)Hiroshi Igarashi <iga@ruby-lang.org>
+

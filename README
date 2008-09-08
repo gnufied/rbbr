@@ -1,0 +1,72 @@
+rbbr README
+===========
+
+  rbbr (RuBy BRowser) is an application to browse
+  modules/classes hierarchy and their constants and methods. If
+  the optionally modules to refer documents are installed, you
+  can also refer the document of methods in the browser.
+
+Requirements
+------------
+
+  * ruby 1.6.x, 1.8.x
+  * Ruby/GTK2 0.7.0 or later
+  * (optional) Ruby-GetText-Package 0.5.2 or later for L10n menus/labels.
+               http://ponx.s5.xrea.com/hiki/ruby-gettext.html
+               Also you need Racc-1.4.3 or later to install this package.
+               http://www.ruby-lang.org/raa/list.rhtml?name=racc
+  * (optional) Ruby-GNOME2 API Documents in RD+.
+               http://ruby-gnome2.sourceforge.jp/data/ruby-gnome2-api.tar.gz
+  * (optional) ri 0.8a (or ruby-1.8.0 or later)
+               http://raa.ruby-lang.org/list.rhtml?name=ri
+  * (optional) ReFe 0.7.1 or later (Japanese only)
+               http://www.loveruby.net/en/refe.html
+
+Install
+-------
+1. Install Racc, Ruby-GetText-Package, ri and ReFe. (All of them are optional)
+2. De-Compress ruby-gnome2-api.tar.gz and rbbr's archive(Optional)
+   withapi package include this api files.
+3. Puts ruby-gnome2-api/* to (rbbr's top directory)/data/rbbr/rd/*
+4. Move rbbr's top directory and type:
+
+    $ ruby install.rb config
+    $ ruby install.rb setup
+   ($ su)
+    # ruby install.rb install
+
+  You can also install files in your favor directory by
+  supplying install.rb some options. Try "ruby install.rb --help".
+
+
+Gets Ruby-GNOME2 API References
+-------------------------------
+You can get the newest(nightly) archives from:
+
+ http://ruby-gnome2.sourceforge.jp/data/ruby-gnome2-api.tar.gz
+
+And you can overwrite them to old data which installed in 
+(shared-data-dir)/rbbr/rd/.
+
+
+Usage
+-----
+
+  * Linux, *BSD, Cygwin
+    Run the following command:
+    $ rbbr
+
+  * MS Windows(except Cygwin)
+    (Double or Single)Click ruby-install-dir\bin\rbbr.rbw from Explorer.
+
+License
+-------
+
+  This program is free software.
+  You can distribute/modify this program under
+  the terms of the Ruby Distribute License. See COPYING.
+
+Author
+------
+  (Ruby-GNOME2 and later) Ruby-GNOME2 Project Team <http://ruby-gnome2.sourceforge.jp>
+  (Original Author)Hiroshi Igarashi <iga@ruby-lang.org>

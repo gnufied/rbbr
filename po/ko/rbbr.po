@@ -1,0 +1,270 @@
+# Catalog file for RBBR.
+# Copyright (C) 2004 Ruby-GNOME2 Project Team
+# Park Ji-ln, 2004
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.6.0\n"
+"Report-Msgid-Bugs-To: mithrandir@electrang.net\n"
+"POT-Creation-Date: 2004-03-25 23:27+0900\n"
+"PO-Revision-Date: 2004-03-27 02:36+0900\n"
+"Last-Translator:  박지인 <mithrandir@electrang.net><>\n"
+"Language-Team: GTP Korean <gnome-kr-translation@gnome.or.kr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;"
+
+#: lib/rbbr/ui/gtk/aboutdialog.rb:49
+msgid "About this application"
+msgstr "이 프로그램에 대해"
+
+#: lib/rbbr/ui/gtk/aboutdialog.rb:74 lib/rbbr/ui/gtk/browselist.rb:152 lib/rbbr/ui/gtk/browselist.rb:171
+#: lib/rbbr/ui/gtk/constlist.rb:25 lib/rbbr/ui/gtk/methodlist.rb:27
+msgid "Name"
+msgstr "이름"
+
+#: lib/rbbr/ui/gtk/aboutdialog.rb:76 lib/rbbr/ui/gtk/constlist.rb:25
+msgid "Value"
+msgstr "값"
+
+#: lib/rbbr/ui/gtk/browselist.rb:152
+msgid "Return type"
+msgstr "반환형"
+
+#: lib/rbbr/ui/gtk/browselist.rb:152
+msgid "Parameters"
+msgstr "파라메터"
+
+#: lib/rbbr/ui/gtk/browselist.rb:171 lib/rbbr/ui/gtk/libselectiondialog.rb:79
+msgid "Type"
+msgstr "종류"
+
+#: lib/rbbr/ui/gtk/browselist.rb:171
+msgid "GType"
+msgstr "GType"
+
+#: lib/rbbr/ui/gtk/browselist.rb:171
+msgid "Flags"
+msgstr "플래그"
+
+#: lib/rbbr/ui/gtk/browselist.rb:171
+msgid "Default"
+msgstr "기본"
+
+#: lib/rbbr/ui/gtk/browser.rb:32
+msgid "Select a Ruby script"
+msgstr "루비 스크립트를 선택"
+
+#: lib/rbbr/ui/gtk/browser.rb:44
+msgid "A folder was selected when a file was expected."
+msgstr "파일이 아니라 폴더를 골랐습니다."
+
+#: lib/rbbr/ui/gtk/browser.rb:47
+msgid "Could not load the script '%s'"
+msgstr "'%s' 스크립트를 부를 수 없습니다"
+
+#: lib/rbbr/ui/gtk/browser.rb:73
+msgid "/_File"
+msgstr "/파일(_F)"
+
+#: lib/rbbr/ui/gtk/browser.rb:74
+msgid "/_File/_Require Library..."
+msgstr "/파일(_F)/라이브러리를 요구...(_R)"
+
+#: lib/rbbr/ui/gtk/browser.rb:75
+msgid "/_File/_Load Script..."
+msgstr "/파일(_F)/스크립트 불러오기...(_L)"
+
+#: lib/rbbr/ui/gtk/browser.rb:76
+msgid "/_File/_Separator"
+msgstr "/파일(_F)/구분자"
+
+#: lib/rbbr/ui/gtk/browser.rb:77
+msgid "/_File/_Quit"
+msgstr "/파일(_F)/끝내기(_Q)"
+
+#: lib/rbbr/ui/gtk/browser.rb:78
+msgid "/_View"
+msgstr "/보기(_V)"
+
+#: lib/rbbr/ui/gtk/browser.rb:79 lib/rbbr/ui/gtk/browser.rb:97
+msgid "/_View/_Expand All"
+msgstr "/보기(_V)/전부 펼치기(_E)"
+
+#: lib/rbbr/ui/gtk/browser.rb:80 lib/rbbr/ui/gtk/browser.rb:98
+msgid "/_View/_Collapse All"
+msgstr "/보기(_V)/전부 접기(_C)"
+
+#: lib/rbbr/ui/gtk/browser.rb:81
+msgid "/_View/_Separator1"
+msgstr "/보기(_V)/구분자1"
+
+#: lib/rbbr/ui/gtk/browser.rb:82 lib/rbbr/ui/gtk/browser.rb:92
+msgid "/_View/Go _Back"
+msgstr "/보기(_V)/뒤로 가기(_B)"
+
+#: lib/rbbr/ui/gtk/browser.rb:83 lib/rbbr/ui/gtk/browser.rb:93
+msgid "/_View/Go _Forward"
+msgstr "/보기(_V)/앞으로 가기(_F)"
+
+#: lib/rbbr/ui/gtk/browser.rb:84
+msgid "/_View/_Separator2"
+msgstr "/보기(_V)/구분자2"
+
+#: lib/rbbr/ui/gtk/browser.rb:85
+msgid "/_View/_Refresh"
+msgstr "/보기(_V)/새로고침(_R)"
+
+#: lib/rbbr/ui/gtk/browser.rb:86
+msgid "/_View/_Separator"
+msgstr "/보기(_V)/구분자"
+
+#: lib/rbbr/ui/gtk/browser.rb:87
+msgid "/_View/_Stock Item and Icon Browser..."
+msgstr "/보기(_V)/_Stock Item and Icon Browser..."
+
+#: lib/rbbr/ui/gtk/browser.rb:88
+msgid "/_Help"
+msgstr "/도움말(_H)"
+
+#: lib/rbbr/ui/gtk/browser.rb:89
+msgid "/_Help/_About"
+msgstr "/도움말(_H)/정보(_A)"
+
+#: lib/rbbr/ui/gtk/browser.rb:106
+msgid "Go back"
+msgstr "뒤로 가기"
+
+#: lib/rbbr/ui/gtk/browser.rb:109
+msgid "Go forward"
+msgstr "앞으로 가기"
+
+#: lib/rbbr/ui/gtk/browser.rb:122
+msgid "Enter search class/module and method/constant"
+msgstr "찾을 클래스 입력/모듈과 메소드/상수"
+
+#: lib/rbbr/ui/gtk/browser.rb:148
+msgid "Ruby Browser"
+msgstr "루비 브라우져"
+
+#: lib/rbbr/ui/gtk/browser.rb:185
+msgid "_List"
+msgstr "리스트(_L)"
+
+#: lib/rbbr/ui/gtk/browser.rb:185
+msgid "_Tree"
+msgstr "트리(_T)"
+
+#: lib/rbbr/ui/gtk/docviewer.rb:139
+msgid "(no document)\n"
+msgstr "(비었음)\n"
+
+#: lib/rbbr/ui/gtk/libselectiondialog.rb:26
+msgid "Select a library"
+msgstr "라이브러리 선택"
+
+#: lib/rbbr/ui/gtk/libselectiondialog.rb:35
+msgid "Check target libraries:"
+msgstr "목표 라이브러리 검사:"
+
+#: lib/rbbr/ui/gtk/libselectiondialog.rb:56
+msgid "Libraries Tree"
+msgstr "라이브러리 트리"
+
+#: lib/rbbr/ui/gtk/libselectiondialog.rb:83
+msgid "Libraries"
+msgstr "라이브러리들"
+
+#: lib/rbbr/ui/gtk/methodlist.rb:54
+msgid "Class Methods / Module Functions"
+msgstr "클래스 메소드 / 모듈 함수"
+
+#: lib/rbbr/ui/gtk/methodlist.rb:67
+msgid "Public Instance Methods"
+msgstr "퍼블릭 인스턴스 메소드"
+
+#: lib/rbbr/ui/gtk/methodlist.rb:71
+msgid "Protected Instance Methods"
+msgstr "프로텍티드 인스턴스 메소드"
+
+#: lib/rbbr/ui/gtk/methodlist.rb:75
+msgid "Private Instance Methods"
+msgstr "프라이빗 인스턴스 메소드"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:59
+msgid "Methods"
+msgstr "메소드"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:60 lib/rbbr/ui/gtk/stockbrowser.rb:72
+msgid "Constants"
+msgstr "상수"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:61
+msgid "Signals"
+msgstr "시그널"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:62
+msgid "Properties"
+msgstr "등록 정보"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:63
+msgid "Child Properties"
+msgstr "자식 등록정보"
+
+#: lib/rbbr/ui/gtk/moduledisplay.rb:66
+msgid "Styles"
+msgstr "스타일"
+
+#: lib/rbbr/ui/gtk/modulelabel.rb:36
+msgid "Select a class/module"
+msgstr "클래스 선택/모듈"
+
+#: lib/rbbr/ui/gtk/modulelistview.rb:26 lib/rbbr/ui/gtk/moduletreeview.rb:26
+msgid "Classes / Modules"
+msgstr "클래스 / 모듈"
+
+#: lib/rbbr/ui/gtk/moduletreeview.rb:66
+msgid "<root>"
+msgstr "<루트>"
+
+#: lib/rbbr/ui/gtk/moduletreeview.rb:71
+msgid "<modules>"
+msgstr "<모듈>"
+
+#: lib/rbbr/ui/gtk/moduleview.rb:97
+msgid "The text you entered was not found. Wrap arround?"
+msgstr "입력한 단어를 찾을 수 없습니다. 정확히 입력하셨나요?"
+
+#: lib/rbbr/ui/gtk/searchentrybox.rb:65
+msgid "_Search Term:"
+msgstr "찾을 말(_S):"
+
+#: lib/rbbr/ui/gtk/searchentrybox.rb:70
+msgid "Search"
+msgstr "찾기"
+
+#: lib/rbbr/ui/gtk/searchentrybox.rb:93
+msgid "Could not compile %s"
+msgstr "%s을(를) 컴파일 할 수 없습니다"
+
+#: lib/rbbr/ui/gtk/stockbrowser.rb:33
+msgid "Selected Item - Gtk::IconSize"
+msgstr "선택된 아이템 - Gtk::IconSize"
+
+#: lib/rbbr/ui/gtk/stockbrowser.rb:86
+msgid "Label"
+msgstr "레이블"
+
+#: lib/rbbr/ui/gtk/stockbrowser.rb:86
+msgid "Accel"
+msgstr "엑셀"
+
+#: lib/rbbr/ui/gtk/stockbrowser.rb:86
+msgid "ID"
+msgstr "아이디"
+
+#: lib/rbbr/ui/gtk/stockbrowser.rb:150
+msgid "Stock Item and Icon Browser"
+msgstr "스톡 아이템과 아이콘 브라우져"
+
+
