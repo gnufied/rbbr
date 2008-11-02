@@ -28,14 +28,14 @@ module RBBR
 module:Module
 (retval):String
 =end
-	raise
+  raise
       end
       def lookup_module( modul )
 =begin
 module:Module
 (retval):String
 =end
-	raise
+  raise
       end
 
       def lookup_const( const )
@@ -43,7 +43,7 @@ module:Module
 const:Symbol
 (retval):String
 =end
-	raise
+  raise
       end
 
       def lookup_method( method )
@@ -51,13 +51,13 @@ const:Symbol
 method:Method
 (retval):String
 =end
-	raise
+  raise
       end
 
       def info
         raise
       end
-    end      
+    end
 
 
     class MultiDatabase < Database
@@ -65,53 +65,53 @@ method:Method
       DatabaseList = []
 
       def initialize
-	@children = []
+  @children = []
         path = File.join(RBBR::Config::LIB_DIR, "/rbbr/doc/*.rb")
         STDERR.puts("target directory: #{path}") if $DEBUG
-	Dir.glob(path).sort.each do |feature|
-	  begin
-	    Kernel.require( feature )
-	    STDERR.puts("found database: #{feature}") if $DEBUG
-	  rescue LoadError
-	  end
-	end
+  Dir.glob(path).sort.each do |feature|
+    begin
+      Kernel.require( feature )
+      STDERR.puts("found database: #{feature}") if $DEBUG
+    rescue LoadError
+    end
+  end
 
-	DatabaseList.each do |klass|
-	  begin
-	    database = klass.new
-	    @children << database
-	    STDERR.puts("found database class: #{klass}") if $DEBUG
-	  rescue
-	    # ignore
-	  end
-	end
+  DatabaseList.each do |klass|
+    begin
+      database = klass.new
+      @children << database
+      STDERR.puts("found database class: #{klass}") if $DEBUG
+    rescue
+      # ignore
+    end
+  end
       end
 
       def lookup_class( klass )
-	@children.each do |db|
-	  begin
-	    return db.lookup_class(klass)
-	  rescue LookupError
-	    # ignore
-	  end
+  @children.each do |db|
+    begin
+      return db.lookup_class(klass)
+    rescue LookupError
+      # ignore
+    end
         end
         ""
       end
 
       def lookup_method( method )
-	@children.each do |db|
-	  begin
-	    return db.lookup_method(method)
-	  rescue LookupError
-	    # ignore
-	  end
-	end
+  @children.each do |db|
+    begin
+      return db.lookup_method(method)
+    rescue LookupError
+      # ignore
+    end
+  end
         ""
       end
 
       def info
         ary = []
-	@children.each do |db|
+  @children.each do |db|
           ary << db.info if db.info
         end
         ary
